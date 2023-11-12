@@ -6,7 +6,7 @@
 /*   By: lseghier <lseghier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 21:41:14 by lseghier          #+#    #+#             */
-/*   Updated: 2023/11/12 18:23:02 by lseghier         ###   ########.fr       */
+/*   Updated: 2023/11/12 18:49:16 by lseghier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ void	char_to_bin(int pid, char c)
 		else
 			kill(pid, SIGUSR2);
 		bit--;
+		while (g_a == 0)
+			pause();
 	}
-	while (g_a == 0)
-		pause();
 }
 
 void	send_char(int pid, char *str)
