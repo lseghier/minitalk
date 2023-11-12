@@ -6,7 +6,7 @@
 /*   By: lseghier <lseghier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 21:41:14 by lseghier          #+#    #+#             */
-/*   Updated: 2023/11/12 18:49:16 by lseghier         ###   ########.fr       */
+/*   Updated: 2023/11/12 19:30:56 by lseghier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	send_char(int pid, char *str)
 	size_t	i;
 
 	i = 0;
-	while (i < ft_strlen(str))
+	while (i <= ft_strlen(str))
 		char_to_bin(pid, str[i++]);
 }
 

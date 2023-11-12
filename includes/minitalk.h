@@ -6,7 +6,7 @@
 /*   By: lseghier <lseghier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 21:39:22 by lseghier          #+#    #+#             */
-/*   Updated: 2023/11/12 18:17:25 by lseghier         ###   ########.fr       */
+/*   Updated: 2023/11/12 19:22:59 by lseghier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <stdio.h>
 # include <signal.h>
 # include <unistd.h>
-# include "minitalk.h"
 
 /* Serveur */
 

@@ -6,7 +6,7 @@
 /*   By: lseghier <lseghier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 04:17:19 by lseghier          #+#    #+#             */
-/*   Updated: 2023/11/12 18:15:52 by lseghier         ###   ########.fr       */
+/*   Updated: 2023/11/12 19:41:30 by lseghier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,8 @@ void	ft_putstr_fd(char *str, int fd)
 
 	i = 0;
 	while (str[i])
-	{
 		ft_putchar_fd (str[i++], fd);
-		ft_putchar_fd ('\n', 1);
-	}
+	ft_putchar_fd ('\n', 1);
 }
 
 void	ft_putnbr_fd(int n, int fd)
