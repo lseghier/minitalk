@@ -6,7 +6,7 @@
 /*   By: lseghier <lseghier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 21:41:14 by lseghier          #+#    #+#             */
-/*   Updated: 2023/11/12 19:30:56 by lseghier         ###   ########.fr       */
+/*   Updated: 2023/11/13 19:18:59 by lseghier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	char_to_bin(int pid, char c)
 	int	bit;
 
 	bit = 7;
-	while (bit >= 0)
+	while (bit > -1)
 	{
 		g_a = 0;
 		if ((c >> bit) & 1)

@@ -6,7 +6,7 @@
 /*   By: lseghier <lseghier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 21:41:25 by lseghier          #+#    #+#             */
-/*   Updated: 2023/11/12 18:13:19 by lseghier         ###   ########.fr       */
+/*   Updated: 2023/11/15 23:45:16 by lseghier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	signal_handler_serv(int signal, siginfo_t *info, void *context)
 	}
 	else
 		bit++;
-	kill (info->si_pid, SIGUSR1);
+	kill(info->si_pid, SIGUSR1);
 }
 
 int	main(void)
